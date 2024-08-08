@@ -22,11 +22,7 @@ function Content() {
     <section className="xl:px-[112px] max-sm:px-4 md:px-7 mb-7">
       <div className="flex max-[940px]:flex-col max-[940px]:items-center justify-between max-[940px]:gap-10">
         <div className="max-w-[550px] max-[940px]:text-center">
-          <img
-            src="../public/imgMain.jpg"
-            className="w-[550px] mx-auto"
-            alt=""
-          />
+          <img src="/imgMain.jpg" className="w-[550px] mx-auto" alt="" />
           <div>
             <p className="montserat text-base font-semibold">
               We are proud to be a non-profit organization, independent and

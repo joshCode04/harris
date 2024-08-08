@@ -24,7 +24,7 @@ function Nav() {
             <ion-icon name={isMenuOpen ? "close" : "menu"}></ion-icon>
           </span>
           <img
-            src="../public/fund.png"
+            src="/fund.png"
             className="max-sm:w-[106px] md:h-[42px] h-8 cursor-pointer"
             alt="fund"
             onClick={handleNavigateHome}
