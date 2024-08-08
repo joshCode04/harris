@@ -1,22 +1,25 @@
 import { useState } from "react";
 import "./Content.css";
+import Popup from "./Popup";
 
 function Content() {
-  // State to manage the selected plan
   const [plan, setPlan] = useState("one-time");
+  const [showPopup, setShowPopup] = useState(false);
 
-  // Define pricing based on the selected plan
   const pricing = {
     "one-time": ["$80", "$160", "$340", "$540", "$1,080", "$2,030"],
     monthly: ["$8", "$16", "$34", "$54", "$108", "$205"],
   };
 
-  // Define styles for selected plan
   const planButtonStyle = (selectedPlan) => ({
     backgroundColor: plan === selectedPlan ? "#000" : "#ddd",
     color: plan === selectedPlan ? "#fff" : "#000",
     border: `2px solid ${plan === selectedPlan ? "#000" : "#ddd"}`,
   });
+
+  const handleDonateClick = () => {
+    setShowPopup(true);
+  };
 
   return (
     <section className="xl:px-[112px] max-sm:px-4 md:px-7 mb-7">
@@ -73,12 +76,16 @@ function Content() {
                 <option value="$">$</option>
               </select>
             </div>
-            <button className="bg-blue-500 text-white px-8 py-2 rounded-md w-full">
+            <button
+              className="bg-blue-500 text-white px-8 py-2 rounded-md w-full"
+              onClick={handleDonateClick}
+            >
               Donate and Support
             </button>
           </div>
         </div>
       </div>
+      {showPopup && <Popup onClose={() => setShowPopup(false)} />}
     </section>
   );
 }
