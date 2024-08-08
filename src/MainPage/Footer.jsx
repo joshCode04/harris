@@ -3,7 +3,7 @@ function Footer() {
     <footer className="bg-zinc-900 text-white py-6 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto flex flex-col gap-6 md:flex-row md:gap-8">
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          <img src="../public/fund1.png" alt="Logo" className="h-10 mb-3" />
+          <img src="/fund1.png" alt="Logo" className="h-10 mb-3" />
           <p className="text-sm leading-relaxed">
             We are committed to bringing you the best service. Follow us on our
             journey and stay updated with the latest news and offers.
