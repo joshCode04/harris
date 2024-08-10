@@ -208,7 +208,7 @@ function Content() {
             >
               <span>
                 <img
-                  className="h9 w-24 sm:w-14 pl-6 sm:pl-0"
+                  className="h9 w-20 sm:w-14 pl-3 sm:pl-0"
                   src="/paypal.png"
                   alt="PayPal"
                 />
