@@ -19,10 +19,9 @@ function Content() {
   const [copied, setCopied] = useState(""); // State for the copied notification
 
   const addresses = {
-    Bitcoin: "1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa",
-    Ethereum: "0x5c69F425a0529D6F8B07e48Dcb5c34b76DdC2E8D",
-    Litecoin:
-      "LZ2fCjPxf3RrrRU5h3TXvhpKoWzSPL1M95h9Vw4kLUpfCzBpzPpKe3BFnb17r8n5RuTrXbr2QhWZHv5EyUpb3dTzCeU9F36TETzQuwVYoedXy3PyZpGh9Afvfhp7CgErqPgt4XULiFCXfj2nBauUnuKB5ntCq4U5A3Fz",
+    Bitcoin: "bc1q26xdk0merragvcuuww8ghafes8tqqnxh8mg0d9",
+    Ethereum: "0xB1DE3D7F74aa03F3d936556d0e3538a8C19A1de3",
+    USDT: "THLMrfWfy25w9iNdJ6n8hoRsJBK6dEAU63",
   };
 
   const pricing = {
@@ -97,15 +96,11 @@ function Content() {
       ),
     },
     {
-      value: "Litecoin",
+      value: "USDT",
       label: (
         <div className="flex items-center">
-          <img
-            src="/litecoin.png"
-            alt="Litecoin Logo"
-            className="w-6 h-6 mr-2"
-          />
-          Litecoin
+          <img src="/USDT.png" alt="USDT Logo" className="w-6 h-6 mr-2" />
+          USDT
         </div>
       ),
     },
